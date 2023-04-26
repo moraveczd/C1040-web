@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5J0JH16HZJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5J0JH16HZJ');
+</script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>pH slabé kyseliny</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+  <h1>pH slabé kyseliny</h1>
+  
+  <p><a href="../index.html">Zpět na předmět C1040</a></p>
+  
+  <h2>Zadání</h2>
+  <p>
+  Vypočítejte pH roztoku kyseliny fluorovodíkové o koncentraci 0,25 mol.dm<sup>-3</sup>. (p<i>K</i><sub>a</sub> = 3,15)
+</p>
+
+  <h2>Řešení</h2>
+  
+  <p>
+   Při výpočtu vyjdeme z rovnice disociace kyseliny fluorovodíkové. Vzhledem k tomu, že jde o slabou kyselinu bude disociovaná pouze z části.
+  </p>
+  
+ <p>
+  HF + H<sub>2</sub>O &#8644; H<sub>3</sub>O<sup>+</sup> + F<sup>-</sup>
+ </p>
+ 
+ <p>
+  Rovnovážnou konstantu disociace můžeme vyjádřit jako:
+  </p>
+
+  <p style="font-size: x-large;">
+  \(K = \frac{[H_3O^+][F^-]}{[HF][H_2O]}\)
+ </p>
+ 
+ <p>
+  Vzhledem k tomu,že se koncentrace vody během disociace prakticky nemění, můžeme ji zahrnout do konstanty, tím získáme disociační konstantu:
+ </p>
+ 
+ <p style="font-size: x-large;">
+  \(K_A = \frac{[H_3O^+][F^-]}{[HF]}\)
+ </p>
+ 
+ <p>
+  Z rovnice disociace plyne rovnost koncentrací H<sub>3</sub>O<sup>+</sup> a F<sup>-</sup>.
+ </p>
+ 
+   <p style="font-size: x-large;">
+  \(K_A = \frac{[H_3O^+]^2}{[HF]}\)
+ </p>
+ <hr>
+ <h3>Zjednodušený výpočet</h3>
+ <p>
+  Koncentraci H<sub>3</sub>O<sup>+</sup> pak získáme jednoduchou úpravou, budeme předpokládat, že <nobr>[HF] = c</nobr>.
+ </p>
+ 
+ <p style="font-size: x-large;">
+  \([H_3O^+]^2 = K_A . c_{HF}\)
+ </p>
+ 
+ <p style="font-size: x-large;">
+  \([H_3O^+] = \sqrt{K_A . c_{HF}}\)
+ </p>
+ 
+ <p>
+  Vztah pro pH pak odvodíme snadno:
+ </p>
+ 
+ <p style="font-size: x-large;">
+  \(pH = -\log [H_3O^+] = -\log \sqrt{K_A . c_{HF}} = -\frac{1}{2} \log (K_A . c_{HF}) = -\frac{1}{2} (\log K_A + \log c_{HF}) = \frac{1}{2} pK_a - \frac{1}{2} \log c_{HF}\)
+ </p>
+ 
+ <p style="font-size: x-large;">
+  \(pH = \frac{1}{2}\ .\ 3,15 - \frac{1}{2}\ .\ \log 0,25 = 1,88 \)
+ </p>
+ <hr>
+ <h3>Výpočet bez zjednodušení</h3>
+ 
+  <p>
+  Rovnovážnou koncentraci H<sub>3</sub>O<sup>+</sup> si označíme jako x, rovnovážnou koncentraci nedisociované HF získáme jako rozdíl počáteční koncentrace a koncentrace H<sub>3</sub>O<sup>+</sup>.
+ </p>
+ 
+    <p style="font-size: x-large;">
+  \(K_A = \frac{[H_3O^+]^2}{[HF]} = \frac{x^2}{c_{HF}-x} \)
+ </p>
+ 
+ <p style="font-size: x-large;">
+  \(K_A = 10^{-pK_A} = 10^{-3,15} = 7,08 . 10^{-4} \)
+ </p>
+ 
+   <p>
+  Úpravou výrazu získáme kvadratickou rovnici:<br>
+  x<sup>2</sup> + K<sub>a</sub> . x - K<sub>a</sub> . c = 0<br>
+  x<sup>2</sup> + 7,08.10<sup>-4</sup> . x - 0,000177 = 0
+ </p>
+ 
+  <p>
+  Kvadratickou rovnici můžeme vyřešit přes diskriminant.<br>
+  D = b<sup>2</sup> - 4ac = (7,08.10<sup>-4</sup>)<sup>2</sup> - 4 . 1 . 0,000177 = 7,09.10<sup>-4</sup>
+ </p>
+
+ <p style="font-size: x-large;">
+  \( x_{1,2} = \frac{-b - \sqrt{D}}{2a} = \frac{-7,08.10^{-4} - \sqrt{7,09.10^{-4}}}{2} \)
+ </p>
+
+  <p>
+  <strong>x<sub>1</sub> = 0,0130</strong><br>
+  x<sub>2</sub> = -0,014<br>
+  Pro výpočet budeme brát pouze kladný kořen, záporná koncentrace není reálná.
+ </p>
+ 
+<p style="font-size: x-large;">
+  \( pH = -\log [H_3O^+] = -\log 0,0130 = 1,89 \)
+ </p>
+
+   </body>
+</html>
